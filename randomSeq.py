@@ -3,7 +3,7 @@ import random
 def shuffle(seq):
     n = len(seq)
     # Fisher–Yates shuffle algorithm
-    for i in range(n-1, 1, -1):
+    for i in range(n-1, 0, -1):
         j = random.randint(0, i)
         swap(seq, j, i)
     return seq
