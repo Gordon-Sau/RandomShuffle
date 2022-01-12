@@ -5,7 +5,7 @@ def shuffle(seq):
     fact = factorial(n)
     r = random.randrange(0, fact[-1])
     # Fisher–Yates shuffle algorithm
-    for i in range(n-1, 1, -1):
+    for i in range(n-1, 0, -1):
         j, r = divmod(r, fact[i - 1])        
         swap(seq, j, i)
     return seq
